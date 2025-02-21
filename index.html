@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduFinanças</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0B235D;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #ECF0F1;
+            background-image: url('https://www.transparenttextures.com/patterns/basketweave.png');
+            background-repeat: repeat;
+        }
+        .container {
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 85%;
+            max-width: 800px;
+            background-color: transparent;
+            margin: auto;
+        }
+        h1 {
+            font-family: 'Lobster', sans-serif;
+            font-size: 2.5em;
+            color: #FFCC99;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .info-box {
+            background-color: #5D9CEC;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: fit-content;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            max-width: 750px;
+        }
+        .info-box img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .info-box p {
+            color: #ECF0F1;
+        }
+        .extra-text {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .extra-text h2, .extra-text h3 {
+            color: #FFCC99;
+        }
+        .extra-text ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .extra-text ul li {
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .btn {
+            background-color: #FFCC99;
+            color: #0B235D;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #F39C12;
+        }
+
+        /* Dicas Container */
+        .dicas-container {
+            display: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .dicas-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .dicas-container ul li {
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DeepMoney</h1>
+        <div class="info-box">
+            <img src="https://img.freepik.com/vetores-premium/icone-de-moeda-dourada-ilustracao-em-desenho-animado-de-dinheiro_138676-2706.jpg?w=740" alt="Imagem do Projeto">
+            <div>
+                <p><strong>Bem-vindo ao EduFinanças!</strong><br>Nosso projeto tem como objetivo conscientizar os jovens sobre a importância da educação financeira. Acreditamos que aprender a gerenciar dinheiro desde cedo pode transformar vidas, proporcionando mais segurança, autonomia e oportunidades no futuro. Junte-se a nós nessa jornada de conhecimento e desenvolvimento financeiro!</p>
+            </div>
+        </div>
+        <div class="extra-text">
+            <h2>O que é Educação Financeira?</h2>
+            <p>A educação financeira é o conhecimento e a compreensão dos conceitos e produtos financeiros que nos permitem tomar decisões bem informadas sobre como ganhar, gastar, economizar e investir dinheiro. Ter uma boa educação financeira ajuda a evitar dívidas desnecessárias, planejar o futuro e alcançar objetivos financeiros de forma mais eficaz.</p>
+            <h3>Por que a Educação Financeira é importante?</h3>
+            <ul>
+                <li>Ajuda a evitar endividamento e juros altos.</li>
+                <li>Ensina a importância de poupar e investir.</li>
+                <li>Melhora o planejamento financeiro pessoal e familiar.</li>
+                <li>Proporciona maior segurança e tranquilidade financeira.</li>
+                <li>Ajuda a realizar sonhos e conquistar objetivos de vida.</li>
+            </ul>
+        </div>
+
+        <button class="btn" onclick="showDicas()">Comece sua jornada</button>
+    </div>
+
+    <!-- Dicas Container -->
+    <div class="dicas-container" id="dicas">
+        <h2>Dicas de Educação Financeira</h2>
+       <p>Aqui você encontrarpa dicas de educação financeira para aplicar no dia a dia Embora nem sempre esse processo seja repentino, é importante saber quais os passos importantes para atingir o pleno equilíbrio financeiro. Afinal, por onde é melhor começar? Como deixar de comprar aquela blusa na promoção? Confira.</p>
+        <ul>
+            <li>Comece a economizar o quanto antes, mesmo que seja pouco. O importante é começar!</li>
+            <li>Defina um orçamento mensal para controlar suas despesas e evite gastos desnecessários.</li>
+            <li>Pesquise antes de fazer grandes compras e busque as melhores opções de preços e parcelamentos.</li>
+            <li>Estude sobre investimentos para fazer seu dinheiro trabalhar para você.</li>
+            <li>Mantenha uma reserva de emergência para situações imprevistas.</li>
+        </ul>
+        <button class="btn" onclick="hideDicas()">Voltar</button>
+    </div>
+
+    <script>
+        // Função para exibir as dicas
+        function showDicas() {
+            // Ocultar o conteúdo principal
+            document.querySelector('.container').style.display = 'none';
+            // Exibir as dicas
+            document.getElementById('dicas').style.display = 'block';
+        }
+
+        // Função para ocultar as dicas e voltar ao conteúdo principal
+        function hideDicas() {
+            // Exibir o conteúdo principal
+            document.querySelector('.container').style.display = 'block';
+            // Ocultar as dicas
+            document.getElementById('dicas').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
